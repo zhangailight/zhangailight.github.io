@@ -82,11 +82,19 @@
     .breadcrumb .sep { color: var(--border); }
     .breadcrumb .current { color: var(--foreground); }
 
+    .topbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
     .topbar-link {
       font-size: 0.85rem;
       font-weight: 500;
       color: var(--muted);
     }
+
+    .topbar-link:hover { color: var(--foreground); opacity: 1; }
 
     /* ===== Hero 头部 ===== */
     .hero {
@@ -650,7 +658,11 @@
           <span class="sep">/</span>
           <span class="current">项目精选</span>
         </div>
-        <a href="#contact" class="topbar-link">联系我</a>
+        <nav class="topbar-nav">
+          <a href="about.html" class="topbar-link">关于</a>
+          <a href="https://www.woshipm.com/u/1685100" class="topbar-link" target="_blank" rel="noopener">人人都是产品经理</a>
+          <a href="#contact" class="topbar-link">联系我</a>
+        </nav>
       </div>
     </div>
   </header>
@@ -943,7 +955,7 @@
         <div class="contact-card reveal">
           <div class="contact-icon">📱</div>
           <h3>电话</h3>
-          <p>+86 138 0000 0000</p>
+          <p>13503433250</p>
         </div>
         <div class="contact-card reveal">
           <div class="contact-icon">💻</div>
